@@ -3,18 +3,28 @@ class Bearmessenger < Formula
   homepage "https://github.com/vic-gamboa/BearMessenger"
   url "https://github.com/vic-gamboa/BearMessenger/releases/download/v1.0.0/BearMessenger-v1.0.tar.gz"
   version "1.0"
-  sha256 "8bb765b5ff7ab4528868ded354f47f613b12fede5df308aefb2e310ad80cc4ff"
+  sha256 "57ae38f7ea01dceec25c8a931638e4c8594c478b7162e7a757d9f83e19635d80"
 
-  depends_on "boost"  
-  depends_on "asio"   
+  depends_on "boost"
+  depends_on "asio"
 
   def install
     system "make"
     
-    bin.install "client_app/SimpleClient" => "client"
-    bin.install "server_app/SimpleServer" => "server"
+    bin.install "client" 
+    bin.install "server"
     
     bin.install "bear.sh" => "bearmessenger"
+  end
+
+  def caveats
+    <<~EOS
+      The BearMessenger has been installed. You can run it using the 'bearmessenger' command.
+    EOS
+  end
+
+  test do
+    system "#{bin}/bearmessenger", "--help"
   end
 end
 
