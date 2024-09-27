@@ -1,4 +1,4 @@
-class BearMessenger < Formula
+class Bearmessenger < Formula
   desc "Bear messaging app"
   homepage "https://github.com/vic-gamboa/BearMessenger"
   url "https://github.com/vic-gamboa/BearMessenger/releases/download/v1.0.0/BearMessenger-v1.0.tar.gz"
