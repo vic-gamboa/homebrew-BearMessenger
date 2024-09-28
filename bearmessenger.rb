@@ -1,9 +1,9 @@
 class Bearmessenger < Formula
   desc "Bear messaging app"
   homepage "https://github.com/vic-gamboa/BearMessenger"
-  url "https://github.com/vic-gamboa/BearMessenger/releases/download/v1.0.0/BearMessenger-v1.0.tar.gz"
+  url "https://github.com/vic-gamboa/BearMessenger/releases/download/v1.1.0/BearMessenger-v1.1.0.tar.gz"
   version "1.0"
-  sha256 "57ae38f7ea01dceec25c8a931638e4c8594c478b7162e7a757d9f83e19635d80"
+  sha256 "bb76936d3d4675f02172bc421e9b4366e8856688055adaf39e73d69ed82f1d64"
 
   depends_on "boost"
   depends_on "asio"
